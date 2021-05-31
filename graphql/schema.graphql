@@ -1,0 +1,18 @@
+type Character {
+    id: Int!
+    name: String!
+    description1: String!
+    description2: String!
+    tags: String!
+    voice: Int!
+    voice_list: String!
+    quote: String!
+}
+
+type Query {
+    characters: [Character]!
+}
+
+type Mutation {
+    updateVoice(id: Int!, voice: Int!): Character
+}
