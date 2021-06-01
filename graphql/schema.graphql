@@ -6,13 +6,33 @@ type Character {
     tags: String!
     voice: Int!
     voice_list: String!
+    voice_properties: String!
     quote: String!
+    properties: String!
+}
+
+type Chapter {
+    series: Int!
+    quote: String!
+}
+
+type Script {
+    id: Int!
+    series: Int!
+    line: Int!
+    text: String!
+    isTalk: Int!
+    sentiment: String
+    speaker: String
 }
 
 type Query {
     characters: [Character]!
+    chapters: [Chapter]!
+    scripts(series: Int!): [Script]!
 }
 
 type Mutation {
     updateVoice(id: Int!, voice: Int!): Character
+    updateSpeaker(series: Int!, line: Int!, speaker: String): Script
 }
