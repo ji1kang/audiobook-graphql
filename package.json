@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Audiobook API with GraphQL",
   "main": "index.js",
-  "repository": "https://github.com/ji1kang/movieql",
+  "repository": "https://github.com/ji1kang/audiobook-graphql",
   "author": "Jiwon Kang<jiwonkang@skku.edu>",
   "license": "MIT",
   "devDependencies": {
